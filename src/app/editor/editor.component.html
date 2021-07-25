@@ -1,0 +1,9 @@
+<p>editor works!</p>
+<div class="flex flex row">
+    <div class="w-full">
+        <textarea class="w-full" cols="30" rows="10" [(ngModel)]="md"></textarea>
+    </div>
+    <div class="w-full">
+        <div markdown [data]="md"></div>
+    </div>
+</div>
