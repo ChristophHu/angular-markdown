@@ -15,4 +15,8 @@ export class EditorComponent implements OnInit {
     this.md = await this.httpClient.get(`/assets/readme.md`,{ responseType: 'text'}).toPromise();
   }
 
+  send() {
+    this.httpClient.put(`/assets/readme.md`, 'testen')
+  }
+
 }
